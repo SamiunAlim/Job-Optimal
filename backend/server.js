@@ -16,7 +16,7 @@ const io = require('socket.io')(http, {
     cors: { origin: "*", methods: ["GET", "POST"] }
 });
 
-const PORT = process.env.PORT || 3081;
+const PORT = process.env.PORT || 8081;
 
 // Socket logic
 io.on('connection', (socket) => {
